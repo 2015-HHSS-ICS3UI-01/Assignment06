@@ -21,9 +21,10 @@ public class A6Q1 {
         //input scanner
         Scanner input = new Scanner(System.in);
         
+        System.out.println("Enter the radius of the circle: ");
         double radius = input.nextDouble();
         
-        System.out.println("Area of the circle: ");
+        System.out.println("The area of the circle is: ");
         System.out.println(circleArea(radius));
     }
 }
