@@ -16,14 +16,27 @@ public class Question1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // create a program that will use a method to calculate 
+        // the area of a circle when given the radius
+        
         // create a scanner for input
         Scanner input = new Scanner(System.in);
-        System.out.println("What is the radius ");
+        
+        // ask the user what the radius is and collect the data using a variable of the radius
+        System.out.print("What is the radius: ");
         double radius = input.nextDouble();
         
-        public static double circleArea(double radius) {
-            double answer = radius * radius * 3.14;
-            System.out.println(double answer);
-        }
+        // create a varaible for what the return is of the circleArea
+        double areaAnswerOfCircle = circleArea(radius);
+        
+        // output what the area of the circle is
+        System.out.println("The area of the circle is " + areaAnswerOfCircle);
+    }
+    
+    // create method to find the cicle area
+    public static double circleArea(double radius){
+        // create variable for the area of the circle and return it
+        double areaOfCircle = Math.PI * radius * radius;
+        return areaOfCircle;
     }
 }
