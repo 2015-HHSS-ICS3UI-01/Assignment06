@@ -26,17 +26,18 @@ public class Question1 {
         System.out.print("What is the radius: ");
         double radius = input.nextDouble();
         
-        // create a varaible for what the return is of the circleArea
-        double areaAnswerOfCircle = circleArea(radius);
-        
         // output what the area of the circle is
-        System.out.println("The area of the circle is " + areaAnswerOfCircle);
+        System.out.println("The area of the circle is " + circleArea(radius));
+        
+        //close scanner
+        input.close();
     }
     
     // create method to find the cicle area
     public static double circleArea(double radius){
+        
         // create variable for the area of the circle and return it
-        double areaOfCircle = Math.PI * radius * radius;
+        double areaOfCircle = Math.PI * Math.pow(radius, 2);
         return areaOfCircle;
     }
 }
