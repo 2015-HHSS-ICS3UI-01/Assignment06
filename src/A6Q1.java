@@ -23,8 +23,8 @@ public class A6Q1 {
         
         System.out.println("Enter the radius of the circle: ");
         double radius = input.nextDouble();
+        double answer = circleArea(radius);
         
-        System.out.println("The area of the circle is: ");
-        System.out.println(circleArea(radius));
+        System.out.println("The area of the circle is " + answer);
     }
 }

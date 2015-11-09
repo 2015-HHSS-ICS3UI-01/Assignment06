@@ -10,35 +10,41 @@ import java.util.Scanner;
  * @author watsk8668
  */
 public class A6Q2 {
-
-    public static String examGrade(double grade) {
-        String mark = "not defined";
-        if (grade < 50) {
-            mark = "F";
-        } else if(grade > 51 && grade < 59) {
-            mark = "D";
-        } else if(grade > 60 && grade < 69) {
-            mark = "C";
-        } else if(grade > 70 && grade < 79) {
-            mark = "B";
-        } else if(grade > 80) {
-            mark = "A";
-        }
-        return mark;
+    //create procedure method to say what your grade is equal to 
+    public static void examGrade(int grade) {
+        //if your grade is higher than an 80%
+        if(grade >= 80) {
+            //then print off an 'A' to the screen
+            System.out.println("A");
+        } // if your grade is between a 70% to 79%
+        else if(grade <= 79 && grade >= 70) {
+            //then print a 'B' to the screen
+            System.out.println("B");
+        } //if your grade is between a 60% to 69%
+        else if(grade <= 69 && grade >= 60) {
+            //then print a 'C' to the screen
+            System.out.println("C");
+        } //if your grade is between 50% to 59%
+        else if(grade <= 59 && grade >= 50) {
+            //then print a 'D' to the screen 
+            System.out.println("D");
+        } //if your grade is between a 0% to 49%
+        else if(grade <= 49) {
+            //then your grade is a 'F'
+            System.out.println("F");
+    }
     }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //nput scaner
+        //input scanner
         Scanner input = new Scanner(System.in);
-
-        System.out.println("Enter the exam grade: ");
-        double grade = input.nextDouble();
-
-        System.out.println("Your mark is equal to a: ");
-        System.out.println(examGrade(grade));
+        
+        //find out what your grade is equal to 
+        examGrade(81); 
 
     }
 }
+
