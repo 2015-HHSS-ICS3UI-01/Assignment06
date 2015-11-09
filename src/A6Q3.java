@@ -33,7 +33,7 @@ public class A6Q3 {
         // while loop that keeps going until i becomes filled
         while (i <= Check) {
             // Most important part of the code.. It looks if its remainder is 0 then prints it.
-            if (Check % i == 0) {
+            if (Check %i == 0 ) {
                 //prints any evenly divisible numbers.
                 System.out.println(i + " is a factor");
 
