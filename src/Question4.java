@@ -12,7 +12,16 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question4 {
-
+    
+    public static double compoundInterest(double initialPrinciple, double interestRate, int years) {
+        
+        double balance = initialPrinciple * Math.pow((1 + interestRate), years);
+        
+        balance = Math.round(balance * 100.00) / 100.00;
+        
+        return balance;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -29,13 +38,11 @@ public class Question4 {
         System.out.print("How many years of interest? ");
         int years = input.nextInt();
         
-        System.out.println("Your balance is " + "$" + compoundInterest(initialPrinciple, interestRate, years));
+        double compoundInterestAnswer = compoundInterest(initialPrinciple, interestRate, years);
+        
+        System.out.println("Your balance is " + "$" + compoundInterestAnswer);
         
         input.close();
     }
-    public static double compoundInterest(double initialPrinciple, double interestRate, int years) {
-        double balance = initialPrinciple * Math.pow((1 + interestRate), years);
-        balance = Math.round(balance * 100.00) / 100.00;
-        return balance;
-    }
+
 }

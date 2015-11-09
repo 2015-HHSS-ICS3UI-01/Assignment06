@@ -12,21 +12,9 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question8 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // create a scanner for input
-        Scanner input = new Scanner(System.in);
-        System.out.print("What is the month? ");
-        int month = input.nextInt();
-        System.out.print("What is the day? ");
-        int day = input.nextInt();
-        System.out.println("The season is " + season(month, day));
-    }
+    
     public static String season(int month, int day) {
-        String seasonType = "";
+        String seasonType;
         if(month < 12 && month < 3){
             seasonType = "Winter";
         } else if(month == 3){
@@ -51,7 +39,7 @@ public class Question8 {
             } else{
                 seasonType = "Fall";
             }
-        } else if(month > 9 && month > 12){
+        } else if(month > 9 && month < 12){
             seasonType = "Fall";
         } else if (month == 12){
             if(day <= 15){
@@ -59,7 +47,23 @@ public class Question8 {
             } else{
                 seasonType = "Winter";
             }
+        } else{
+            seasonType = "No Season (Not Real Date)";
         }
         return seasonType;
     }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // create a scanner for input
+        Scanner input = new Scanner(System.in);
+        System.out.print("What is the month? ");
+        int month = input.nextInt();
+        System.out.print("What is the day? ");
+        int day = input.nextInt();
+        System.out.println("The season is " + season(month, day));
+    }
+
 }

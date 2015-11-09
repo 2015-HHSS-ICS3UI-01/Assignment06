@@ -12,7 +12,21 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question7 {
-
+    
+    public static int firstDigit(int number) {
+        
+        int firstNumber = number;
+        
+        int lastNumber;
+        
+        while(firstNumber >= 10){
+            lastNumber = number % 10;
+            firstNumber = (firstNumber - lastNumber) / 10;
+        }
+        
+        return firstNumber;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -22,17 +36,11 @@ public class Question7 {
         
         System.out.print("Enter the number: ");
         int number = input.nextInt();
-        System.out.println("The first digit is " + firstDigit(number));
+        
+        int firstDigitAnswer = firstDigit(number);
+        System.out.println("The first digit is " + firstDigitAnswer);
+        
         input.close();
-    }
-    public static int firstDigit(int number) {
-        int firstNumber = number;
-        int lastNumber;
-        while(firstNumber >= 10){
-            lastNumber = number % 10;
-            firstNumber = (firstNumber - lastNumber) / 10;
-        }
-        return firstNumber;
     }
     
 }

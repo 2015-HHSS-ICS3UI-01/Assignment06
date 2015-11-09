@@ -12,7 +12,20 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question3 {
-
+    
+    public static void factors(int factorNumber) {
+        
+        for( int possibleFactor = 1; possibleFactor <= factorNumber; possibleFactor = possibleFactor + 1){
+            
+            if((factorNumber % possibleFactor) == 0 && possibleFactor < factorNumber){    
+                System.out.print(possibleFactor + ", ");
+            
+            } else if(possibleFactor == factorNumber){
+                System.out.println(possibleFactor);
+            }
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -22,18 +35,11 @@ public class Question3 {
         
         System.out.print("Enter the number you wish to find the factors of: ");
         int factorNumber = input.nextInt();
+        
+        System.out.print("The factors of " + factorNumber + " are ");
         factors(factorNumber);
         
         input.close();
     }
-    public static void factors(int factorNumber) {
-        System.out.print("The factors of " + factorNumber + " are ");
-        for( int possibleFactor = 1; possibleFactor <= factorNumber; possibleFactor = possibleFactor + 1){
-            if((factorNumber % possibleFactor) == 0 && possibleFactor < factorNumber){    
-                System.out.print(possibleFactor + ", ");
-            } else if(possibleFactor == factorNumber){
-                System.out.println(possibleFactor);
-            }
-        }
-    }
+
 }

@@ -12,7 +12,14 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question6 {
-
+    
+    public static int lastDigit(int number) {
+        
+        int lastNumber = number % 10;
+        
+        return lastNumber;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -22,11 +29,11 @@ public class Question6 {
         
         System.out.print("Enter the number: ");
         int number = input.nextInt();
-        System.out.println("The last digit is " + lastDigit(number));
+        
+        int lastDigitAnswer = lastDigit(number);
+        System.out.println("The last digit is " + lastDigitAnswer);
+        
         input.close();
     }
-    public static int lastDigit(int number) {
-        int lastNumber = number % 10;
-        return lastNumber;
-    }
+
 }

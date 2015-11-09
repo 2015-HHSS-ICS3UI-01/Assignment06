@@ -12,21 +12,7 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question2 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // create a scanner for input
-        Scanner input = new Scanner(System.in);
-        
-        System.out.print("Enter your Exam Percentaage: ");
-        double examPercentage = input.nextDouble();
-        
-        examGrade(examPercentage);
-        
-        input.close();
-    }
+    
     public static void examGrade(double examPercentage) {
         
         char gradeLevel;
@@ -44,4 +30,20 @@ public class Question2 {
         }
         System.out.println("The level of your exam percentage is " + gradeLevel);
     }
+    
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // create a scanner for input
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter your Exam Percentaage: ");
+        double examPercentage = input.nextDouble();
+        
+        examGrade(examPercentage);
+        
+        input.close();
+    }
+
 }

@@ -11,7 +11,15 @@ import java.util.Scanner;
  * @author richj0985
  */
 public class Question1 {
-
+    
+    // create method to find the cicle area
+    public static double circleArea(double radius){
+        
+        // create variable for the area of the circle and return it
+        double areaOfCircle = Math.PI * Math.pow(radius, 2);
+        return areaOfCircle;
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -26,18 +34,14 @@ public class Question1 {
         System.out.print("What is the radius: ");
         double radius = input.nextDouble();
         
+        // create variable to store the area of the circle
+        double circleAreaAnswer = circleArea(radius);
+        
         // output what the area of the circle is
-        System.out.println("The area of the circle is " + circleArea(radius));
+        System.out.println("The area of the circle is " + circleAreaAnswer);
         
         //close scanner
         input.close();
     }
     
-    // create method to find the cicle area
-    public static double circleArea(double radius){
-        
-        // create variable for the area of the circle and return it
-        double areaOfCircle = Math.PI * Math.pow(radius, 2);
-        return areaOfCircle;
-    }
 }
