@@ -26,7 +26,7 @@ public class A6Q2 {
         }else if(perc<101){
             System.out.println("You got an A.");
         }else if(perc>100){
-            System.out.println("You got better than perfect you chaeter.");
+            System.out.println("You got better than perfect you cheater.");
         }
     }
 }
