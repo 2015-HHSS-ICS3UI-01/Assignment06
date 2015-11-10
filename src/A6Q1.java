@@ -31,5 +31,9 @@ public class A6Q1 {
         double answer = areaCircle (radius);
         
         System.out.println("The area of the circle is " + answer);
+        
+        input.close();
+        
     }
+    
 }                                                                 
