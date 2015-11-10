@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -18,8 +21,16 @@ public class A6Q3 {
             int check = num % inc;
             if(check==0){
                 System.out.println(inc);
+                if(num/inc==inc){
+                    System.out.println(inc);
+                }
             }
         }
         System.out.println(num);
+    }
+    public static void main(String[] args) {
+        System.out.println("Enter a number and Get the factors.");
+        Scanner input = new Scanner(System.in);
+        factors(input.nextInt());
     }
 }

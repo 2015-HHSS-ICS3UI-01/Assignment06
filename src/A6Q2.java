@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -28,5 +31,10 @@ public class A6Q2 {
         }else if(perc>100){
             System.out.println("You got better than perfect you cheater.");
         }
+    }
+    public static void main(String[] args) {
+        System.out.println("Enter your percentage.");
+        Scanner input = new Scanner(System.in);
+        examGrade(input.nextInt());
     }
 }
