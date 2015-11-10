@@ -6,7 +6,6 @@ import java.util.Scanner;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Administrator
@@ -17,25 +16,25 @@ public class A6Q5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // generates scanner
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter a range of numbers ");
-        int a = in.nextInt();
-        int n = in.nextInt();
-        
-      
-        
-        chaotic(a,n,);
+        // Asks for number of lines
+        System.out.println("Input number of lines ");
+        int lines = in.nextInt();
+        // executes the chaotic method
+        chaotic(lines);
     }
-    public static void chaotic(int a, int n){
-         int randNum = (int)(Math.random()*(n - a + 1))+ a;
-         
-         
-         
-         for(; n > a; n--){
-             for(randNum){
-             System.out.println("*");
-         }
-         }
+    // The method for chaotic, this is known as a procedure method because it's void
+    public static void chaotic(int lines) {
+        // This loop counts up until it = #lines
+        for (int i = 0; i < lines; i++) {
+            // Equation Mr.Lamont composed to obtain a random integer of patterns
+            int randNum = (int) (Math.random() * (5)) + 1;
+            // This is is used to write patterns 
+            for (int patterns = randNum; patterns >= 1; patterns--) {
+                System.out.print("*");
+            }// This prints the line completely and makes a new one
+            System.out.println("");
+        }
     }
-    
 }
