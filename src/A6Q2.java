@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class A6Q2 {
 
     public static void examGrade(int grade) {
-
+        //uses the users number to give them their mark as a letter
         if (grade < 50) {
             System.out.println("F");
         } else if (grade >= 50 && grade < 60) {
@@ -30,12 +30,12 @@ public class A6Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        //new scanner
         Scanner input = new Scanner(System.in);
-
-        System.out.println("enter exam grade ");
+        //asks user for theri exam grade
+        System.out.print("Enter exam grade: ");
         int grade = input.nextInt();
-
+        //tells user their mark as a letter
         examGrade(grade);
     }
 }
