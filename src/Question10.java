@@ -13,7 +13,21 @@ import java.util.Scanner;
 public class Question10 {
 
     public static boolean sameDashes(String setOne, String setTwo) {
+        boolean dashes = true;
+        while(dashes && setOne.equals("") && setTwo.equals("")){
+            String startOne = setOne;
+            String startTwo = setTwo;
+            startOne = startOne.substring(0, 1);
+            startTwo = startTwo.substring(0, 1);
+            if(startOne == startTwo){
+                dashes = true;
+                startOne = startOne.substring(1);
+                startTwo = startTwo.substring(1);
+            } else{
+                dashes = false;
+            }
         
+        return dashes;
     }
     
     /**
@@ -27,5 +41,7 @@ public class Question10 {
         String setOne = input.nextLine();
         System.out.println("Enter the second set of letters / digits: ");
         String setTwo = input.nextLine();
+        
+        System.out.println(sameDashes(setOne, setTwo));
     }
 }
