@@ -9,6 +9,7 @@
  */
 public class A6Q5 {
     public static void chaotic() {
+        while (true) {
          int randNum = (int)(Math.random()*(5 - 1 + 1))+ 1;
          if(randNum == 1){
          System.out.println("*");
@@ -22,15 +23,13 @@ public class A6Q5 {
              System.out.println("*****");
          }
     }
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         //
-        while (true) {
-            if(chaotic > 0 || <6) {
+        
         chaotic();
-        }
-    }
     }
 }
