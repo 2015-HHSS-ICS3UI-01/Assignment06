@@ -9,8 +9,10 @@
  */
 public class A6Q3 {
     
-    public static double factors (double n){
+    public static void factors (int n){
     
+        System.out.println(n);
+        
         
     }
 
@@ -18,6 +20,6 @@ public class A6Q3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
 }
