@@ -23,13 +23,17 @@ public class A6Q6 {
         int number = in.nextInt();
         // Executes it and stores the answer from the method
         int answer = lastDigit(number);
-        System.out.println(answer);
+        System.out.println("The last digit is "+answer);
     }
     
     // Assistant method used to execute 
     public static int lastDigit(int number){
         // The formula of finding last digit
         int results = number%10;
+        // This neutralizes the number
+        if(results < 1){
+            results = (results*-1);
+        }
         // Return answer
           return results;      
                 
