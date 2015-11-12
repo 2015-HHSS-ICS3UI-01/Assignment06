@@ -21,5 +21,13 @@ public class A6Q8 {
         System.out.println("Enter the month, and the day please.");
         int month = in.nextInt();
         int day = in.nextInt();
+        
+        int answer =season(month,day);
+        
+    }
+    public static int season(int day, int month){
+        if (month <= 3 && day <= 15){
+            
+        }else if (month <= 3 && day )
     }
 }
