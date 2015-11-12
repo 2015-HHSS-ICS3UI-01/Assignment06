@@ -30,8 +30,8 @@ public class Question1 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        // ask the user what the radius is and collect the data using a variable of the radius
-        System.out.print("What is the radius: ");
+        // ask the user what the radius is and store the data using a variable of the radius
+        System.out.print("What is the radius of the circle? : ");
         double radius = input.nextDouble();
         
         // create variable to store the area of the circle

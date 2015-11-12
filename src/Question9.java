@@ -48,6 +48,8 @@ public class Question9 {
         } else{
             System.out.println("The number is not all odd");
         }
+        
+        input.close();
     }
     
 }

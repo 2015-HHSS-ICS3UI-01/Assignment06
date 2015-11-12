@@ -64,6 +64,8 @@ public class Question8 {
         System.out.print("What is the day? ");
         int day = input.nextInt();
         System.out.println("The season is " + season(month, day));
+        
+        input.close();
     }
 
 }

@@ -13,21 +13,25 @@ import java.util.Scanner;
 public class Question10 {
 
     public static boolean sameDashes(String setOne, String setTwo) {
-        boolean dashes = true;
-        while(dashes && setOne.equals("") && setTwo.equals("")){
-            String startOne = setOne;
-            String startTwo = setTwo;
-            startOne = startOne.substring(0, 1);
-            startTwo = startTwo.substring(0, 1);
-            if(startOne == startTwo){
-                dashes = true;
-                startOne = startOne.substring(1);
-                startTwo = startTwo.substring(1);
+        boolean dashesCorrect = true;
+        String changedWordOne = setOne;
+        String changedWordTwo = setTwo;
+        while(dashesCorrect && !changedWordOne.equals("") && !changedWordTwo.equals("")){
+            if(changedWordOne.startsWith("-") || changedWordTwo.startsWith("-")){
+                if(changedWordOne.startsWith("-") && changedWordTwo.startsWith("-")){
+                    dashesCorrect = true;
+                    changedWordOne = changedWordOne.substring(1);
+                    changedWordTwo = changedWordTwo.substring(1);
+                } else{
+                    dashesCorrect = false;
+                }
             } else{
-                dashes = false;
+                dashesCorrect = true;
+                changedWordOne = changedWordOne.substring(1);
+                changedWordTwo = changedWordTwo.substring(1);
             }
-        
-        return dashes;
+        }
+        return dashesCorrect;
     }
     
     /**
@@ -37,11 +41,19 @@ public class Question10 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Enter the first set of letters / digits: ");
+        System.out.print("Enter the first set of letters / digits: ");
         String setOne = input.nextLine();
-        System.out.println("Enter the second set of letters / digits: ");
+        System.out.print("Enter the second set of letters / digits: ");
         String setTwo = input.nextLine();
         
-        System.out.println(sameDashes(setOne, setTwo));
+        boolean dashesProper = sameDashes(setOne, setTwo);
+        
+        if(dashesProper){
+            System.out.println("The dashes (-) are in the same spots");
+        } else{
+            System.out.println("The dashes (-) are not in the same spots");
+        }
+        
+        input.close();
     }
 }

@@ -15,7 +15,7 @@ public class Question3 {
     
     public static void factors(int factorNumber) {
         
-        for( int possibleFactor = 1; possibleFactor <= factorNumber; possibleFactor = possibleFactor + 1){
+        for(int possibleFactor = 1; possibleFactor <= factorNumber; possibleFactor = possibleFactor + 1){
             
             if((factorNumber % possibleFactor) == 0 && possibleFactor < factorNumber){    
                 System.out.print(possibleFactor + ", ");
