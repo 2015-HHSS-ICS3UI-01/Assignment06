@@ -25,11 +25,22 @@ public class A6Q9 {
         System.out.println(answer);
     }
     public static boolean allDigitsOdd(int digit){
-        int answer = digit%10;
-       while(digit > 10){
-           answer = digit/10;
+        int divided = digit/1;
+        int answer = divided%10;
+         
+       while(divided > 10){
+            
+           if(answer == 2 && answer == 4 && answer == 6 && answer == 8){
+             divided = divided/10;
+           answer = divided%10;
            
+       }else{
+               return false;
+               
+           }
+               
        }
         return true;
+        
     }
 }
