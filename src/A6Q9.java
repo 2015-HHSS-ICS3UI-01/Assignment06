@@ -32,7 +32,7 @@ public class A6Q9 {
             
            if(answer == 2 && answer == 4 && answer == 6 && answer == 8){
              divided = divided/10;
-           answer = divided%10;
+           answer = (divided%10);
            
        }else{
                return false;
