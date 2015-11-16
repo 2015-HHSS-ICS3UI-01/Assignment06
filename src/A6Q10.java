@@ -27,10 +27,17 @@ public class A6Q10 {
         System.out.println(answer);
     }
     public static boolean sameDashes(String first, String second){
-        int dashFound = first.indexOf("-");
-            String firstF = first.substring(0, dashFound);
-            String firstS = second.substring(0, dashFound);
-            String answer = firstS  firstF;
+        int numChars = first.length();
+        int numCharz = second.length(); 
+        
+         int dashFound = first.indexOf("-");
+             firstz = first.substring(0, dashFound);
+            String last = pigLatin.substring(aFound);
+            char result = .charAt(8);
+            int answer = (numChars - numCharz);
+            
+            return true;
+            
     }
     
 }
