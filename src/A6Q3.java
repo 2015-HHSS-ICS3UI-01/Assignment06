@@ -11,7 +11,7 @@ public class A6Q3 {
     
     public static void factors (int n){
     
-        System.out.println(n);
+        for (int factors = 1; )
         
         
     }
