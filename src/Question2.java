@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Question2 {
     
-    // create method to print out the exam grade of the user based on the percentage
+    // create method to print out the exam grade of the user based on the percentage given
     public static void examGrade(double examPercentage) {
         
         // create variable for the character of the grade level given
@@ -43,6 +43,9 @@ public class Question2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // create a program that uses a method to determine what grade level in characters
+        // the user recieves based on the percentage they got on the exam
+
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         

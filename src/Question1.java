@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Question1 {
     
-    // create method to find the cicle area
+    // create method to find the cicle area when given the radius
     public static double circleArea(double radius){
         
         // create variable for the area of the circle and return it
