@@ -14,13 +14,14 @@ public class A6Q3 {
     public static void factors(int number) {
 
         //Goes through all the numbers that is divisable
-        for(int i = 1; i < number; i++){
+        for (int i = 1; i < number; i++) {
             if (number % i == 0) {
                 System.out.print(i + ", ");
             }
         }
-        System.out.println(number);     
+        System.out.println(number);
     }
+
     /**
      * @param args the command line arguments
      */
@@ -32,8 +33,7 @@ public class A6Q3 {
         //asks user for number to find factors
         System.out.print("Type in a number: ");
         int number = input.nextInt();
-        int numbers = input.nextInt();
-        
+
         //tells user factor of their number
         System.out.print("Factors of " + number + " are: ");
         factors(number);
