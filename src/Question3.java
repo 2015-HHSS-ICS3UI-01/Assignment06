@@ -14,6 +14,8 @@ import java.util.Scanner;
 public class Question3 {
     // create method to find the factors of a number when given the number the person whishes to factor
     public static void factors(int factorNumber) {
+        // display what the factors are
+        System.out.print("The factors of " + factorNumber + " are ");
         
         // create a loop to check the possible factors of a number from 1 to the number
         for(int possibleFactor = 1; possibleFactor <= factorNumber; possibleFactor = possibleFactor + 1){
@@ -44,7 +46,6 @@ public class Question3 {
         int factorNumber = input.nextInt();
         
         // display what the factors are
-        System.out.print("The factors of " + factorNumber + " are ");
         factors(factorNumber);
         
         // close scanner
