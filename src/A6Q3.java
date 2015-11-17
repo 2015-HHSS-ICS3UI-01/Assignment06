@@ -46,5 +46,9 @@ public class A6Q3 {
         //activate the method to determine the factors
         
         factors (n);
+        
+        //close scanner
+        
+        input.close();
     }
 }
