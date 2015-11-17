@@ -28,23 +28,31 @@ public class A6Q10 {
         
     }
     public static boolean sameDashes(String first, String second){
-
+        while(true){
          int dashFound = first.indexOf("-");
+         int dashFound2 = second.indexOf("-");
           
                String first1 = first.substring(0, dashFound);
-            String first2 = second.substring(0,dashFound);
+            String first2 = second.substring(0,dashFound2);
             
              int numChars = first1.length();
              int numChars2 = first2.length();
+             
+             
+             first = first.substring(dashFound, dashFound);
+             second = second.substring(dashFound2,dashFound2);
 
-             int answer = numChars2 - numChars;
+             int answer = (numChars2 - numChars);
            
              if(answer != 0){
                  return false;
              }
+             if (numChars == 0 && numChars2 == 0){
+                 return true;
+             }
             return true;
             
-           
+        } 
     }
     
 }
