@@ -10,7 +10,7 @@
 public class A6Q5 {
 
     public static void chaotic(int total) {
-        //
+        
         for (int i = 0; i < total; i = i + 1) {
             int randomNumber = (int) (Math.random() * (5 - 1 + 1)) + 1;
             //prints out random number of "*" and goes to next line
@@ -29,6 +29,5 @@ public class A6Q5 {
 
         //prints out the number of lines entered in the brackets
         chaotic(4);
-
     }
 }
