@@ -32,14 +32,20 @@ public class Extra10 {
             char second1 = second.charAt(0);
             if (second1 != '-' && first1 == '-') {
                 return false;
+                
             }
-            if (second1 == '-' && first1 != '-') {
+            else if (second1 == '-' && first1 != '-') {
                 return false;
             }
-            first1 = "";
-            second1 = "";
+            
+            first = first.substring(0,1);
+            second = second.substring(0,1);
+            first = first.replace(first, "");
+            second = second.replace(second, "");
+            
+           
 
-            if (second1 == '-' && first1 == '-') {
+            if (second1 == '-' || first1 == '-') {
                 return true;
             }
             

@@ -39,15 +39,15 @@ public class A6Q10 {
              int numChars2 = first2.length();
              
              
-             first = first.substring(dashFound, dashFound);
-             second = second.substring(dashFound2,dashFound2);
+             first = first1.replace(first1, "");
+             second = first2.replace(first2, "");
 
              int answer = (numChars2 - numChars);
            
              if(answer != 0){
                  return false;
              }
-             if (numChars == 0 && numChars2 == 0){
+             if (numChars != 0 && numChars2 != 0){
                  return true;
              }
             return true;
