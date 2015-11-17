@@ -25,19 +25,22 @@ public class A6Q10 {
         
         boolean answer = sameDashes(first,second);
         System.out.println(answer);
+        
     }
     public static boolean sameDashes(String first, String second){
-        int numChars = first.length();
-        int numCharz = second.length(); 
-        
+
          int dashFound = first.indexOf("-");
-             firstz = first.substring(0, dashFound);
+           int dashFound2 = second.indexOf("-");
+             int answer = dashFound - dashFound2;
+               String first = pigLatin.substring(0, aFound);
             String last = pigLatin.substring(aFound);
-            char result = .charAt(8);
-            int answer = (numChars - numCharz);
-            
+           
+             if(answer != 0){
+                 return false;
+             }
             return true;
             
+           
     }
     
 }
