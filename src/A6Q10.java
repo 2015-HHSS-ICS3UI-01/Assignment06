@@ -30,10 +30,14 @@ public class A6Q10 {
     public static boolean sameDashes(String first, String second){
 
          int dashFound = first.indexOf("-");
-           int dashFound2 = second.indexOf("-");
-             int answer = dashFound - dashFound2;
-               String first = pigLatin.substring(0, aFound);
-            String last = pigLatin.substring(aFound);
+          
+               String first1 = first.substring(0, dashFound);
+            String first2 = second.substring(0,dashFound);
+            
+             int numChars = first1.length();
+             int numChars2 = first2.length();
+
+             int answer = numChars2 - numChars;
            
              if(answer != 0){
                  return false;
