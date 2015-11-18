@@ -16,7 +16,7 @@ public class A6Q5 {
         
         
         
-        for (int lines = 0; lines <= n; lines = lines ++){
+        while (n>0){
             
             int randomNumber = (int)(Math.random()*100) + 1;
             
@@ -31,7 +31,7 @@ public class A6Q5 {
         }else if (randomNumber >= 80 && randomNumber <= 100){
             System.out.println("*****");
         }
-        
+        n = n-1;
     }}
     /**
      * @param args the command line arguments
