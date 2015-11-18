@@ -9,6 +9,11 @@
  */
 public class A6Q5 {
 
+    public static void chaotic (int n){
+        
+        for ()
+        
+    }
     /**
      * @param args the command line arguments
      */
