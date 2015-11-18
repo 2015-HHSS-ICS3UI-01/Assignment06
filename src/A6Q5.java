@@ -14,10 +14,8 @@ public class A6Q5 {
 
     public static void chaotic (int n){
         
-        
-        
         while (n>0){
-            
+                        
             int randomNumber = (int)(Math.random()*100) + 1;
             
         if (randomNumber >= 0 && randomNumber <= 19){
@@ -38,13 +36,20 @@ public class A6Q5 {
      */
     public static void main(String[] args) {
         
+        //make a new scanner
         Scanner input = new Scanner (System.in);
         
+        //tell user to enter a number
         System.out.println("Please enter a number");
         
+        //store the number
         int n = input.nextInt();
         
+        //activate method
         chaotic (n);
+        
+        //close scanner
+        input.close();
      
     }
 }
