@@ -8,8 +8,8 @@
  * @author pircn0556
  */
 public class Q3 {
-    public static int factor(int f){
-        if
+    public static int factors(int f){
+        
     }
     /**
      * @param args the command line arguments
