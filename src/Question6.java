@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question6 {
+    
     // create a method that will determine the last digit of a number when given that number
     public static int lastDigit(int number) {
         

@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question3 {
+    
     // create method to find the factors of a number when given the number the person whishes to factor
     public static void factors(int factorNumber) {
         // display what the factors are

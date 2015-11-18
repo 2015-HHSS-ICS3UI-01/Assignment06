@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question4 {
+    
     // create a method that will determine the compound interest of the user when given the initial princciple, the interest rate, and the number of years
     public static double compoundInterest(double initialPrinciple, double interestRate, int years) {
         

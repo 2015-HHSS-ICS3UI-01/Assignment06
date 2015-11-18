@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question5 {
+    
     // create a mthod that will output a random number of symbols based on how many lines the user requests
     public static void chaotic(int lines) {
         // while the number of lines requested is greater than 0 then output the number lines of random symbols

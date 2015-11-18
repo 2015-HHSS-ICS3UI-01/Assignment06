@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Jon
  */
 public class Question7 {
+    
     // create a mthod that will determine the first digit of a number when given the  number requested by the user
     public static int firstDigit(int number) {
         
