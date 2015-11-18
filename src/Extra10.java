@@ -39,7 +39,9 @@ public class Extra10 {
             }
             
             first = first.substring(0,1);
+           
             second = second.substring(0,1);
+            
             first = first.replace(first, "");
             second = second.replace(second, "");
             
