@@ -31,7 +31,9 @@ public class Question8 {
             System.out.println("Spring");
         }else if(answer >= 616 && answer <=915){
             System.out.println("Summer");
-        }else if()
+        }else if(answer >= 915 && answer <= 1215){
+            System.out.println("Fall");
+        }
         
     }
 }
