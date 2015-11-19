@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -8,11 +11,20 @@
  * @author stahc1596
  */
 public class Question4 {
-
-    /**
-     * @param args the command line arguments
-     */
+public static double compoundInterest(double p, double r, int n){
+    double base = p*(1 + r);
+    base = Math.pow(base, r);
+    return base;
+}
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner input = new Scanner (System.in);
+        System.out.println("Input a initial amount.");
+        double initial = input.nextDouble();
+        System.out.println("Input a interest rate.");
+        double interest = input.nextDouble();
+        System.out.println("Input a year.");
+        int year = input.nextInt();
+        double answer = compoundInterest(initial, interest, year);
+        System.out.println("Your balance is " + answer);
     }
 }
