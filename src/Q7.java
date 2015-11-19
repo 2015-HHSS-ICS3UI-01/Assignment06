@@ -11,7 +11,7 @@ public class Q7 {
     public static void firstDigit(int first){
         while(first>0&&first<0){
             
-            if(first<0&&first<-10){
+            if(first<0&&first>-10){
                 break;
             
             }else if(first>0&&first<10){

@@ -1,30 +1,37 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author pircn0556
  */
 public class Q3 {
-    public static int factors(int f){
-        while(true){
-            for(int i = 1;i>0;i++){
-            f = f%i;}
-            if(f==0){
-                System.out.println(""+f);
-            }else if(f>f){
-                break;
-            }
+
+    public static void factors(int f) {
+        for (int i = 1; i <= f; i++) {
+            int remainder = f % i;
+
+            if (remainder == 0) {
+                System.out.println(i);
+            } 
         }
-        
-        return f;
+
+   
     }
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        int f = input.nextInt();
+        System.out.println("Factored numbers of " + f + " is ");
+        factors(f);
+        
+
     }
 }
