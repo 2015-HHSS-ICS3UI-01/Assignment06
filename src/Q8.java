@@ -8,7 +8,9 @@
  * @author pircn0556
  */
 public class Q8 {
-    
+    public static void season(int month, int day){
+        
+    }
     /**
      * @param args the command line arguments
      */
