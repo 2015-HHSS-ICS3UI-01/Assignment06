@@ -8,6 +8,12 @@
  * @author sevcm7279
  */
 public class A6Q6 {
+    
+    public static int lastDigit (n){
+        
+        
+      
+    }
 
     /**
      * @param args the command line arguments
