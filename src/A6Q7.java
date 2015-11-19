@@ -16,7 +16,13 @@ public class A6Q7 {
      * @param args the command line arguments
      */
     public static int firstDigit(int num){
-        for(int mult = 0; )
+        if(num<0){
+            num = num * -1;
+        }
+        while(num>=10){
+            num = num / 10;
+        }
+        return num;
     }
     public static void main(String[] args) {
         System.out.println("Enter a number.");
