@@ -17,9 +17,8 @@ public class Question9 {
     public static boolean allDigitsOdd(int number) {
         
         // create a variable to determine if the number is completely odd or not
-        // it will first start to be false as the numbers have not been checked yet
-        // this makes sure 0 is not odd
-        boolean odd = false;
+        // it will first start to be true as the numbers have not been checked yet
+        boolean odd = true;
         
         // create a variable to store what the last digit of a number is
         int remainder;
@@ -27,8 +26,8 @@ public class Question9 {
         // create a variable to store the last digit of the number
         int lastDigit;
         
-        // while the number is still not completely all odd then the digits will contiue to be checked
-        while(odd == false){
+        // while the digits so far in the number are odd then continue to check the rest of the number
+        while(odd){
             
             // the last digit of the number is the remainder of the number divided by 10
             // this will eliminate the numbers before and keep the last digit
@@ -38,22 +37,22 @@ public class Question9 {
             remainder = lastDigit % 2;
             
             // if the remainder is equal to 0 then the last digit is even
-            // if it is not even to 0 then it is odd and therefore should be continued
-            if(remainder != 0){
-                
-                // the number should be now decreased to check the next digit
-                // to do this the number will be subtracted by the last digit and divided by 10
+            // if it is not even to 0 then it is still odd
+            if(remainder != 0 && number > 0){
+
+                // take off the remainder of the number that was just checked
+                // this will continue to the next number
                 number = (number - lastDigit) / 10;
                 
-                // if the number is now equal to 0 then all the digits have been checked and the therefore the number is all odd
+                // if the number now equals 0 then the loop should break
                 if(number == 0){
-                    odd = true;
+                    break;
                 }
-            
+                
             // if the remainder is equal to 0 then the number is not all odd
-            // therefore it should break
-            } else{
-                break;
+            // therefore odd is false
+            }else{
+                odd = false;
             }
         }
         
