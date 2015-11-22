@@ -40,39 +40,13 @@ public class Question10 {
                 
                 dashesCorrect = true;
             }
-                setOne = setOne.substring(1);
-                setTwo = setTwo.substring(1);
+            
+            // once it the character has been checked move on to the next character
+            // cut down the set of characters down by 1
+            setOne = setOne.substring(1);
+            setTwo = setTwo.substring(1);
         }
-//        
-//        // create a variable to determine if it is true that the dashes are in the same positions
-//        boolean dashesCorrect = true;
-//        
-//        String changedWordOne = setOne;
-//        
-//        String changedWordTwo = setTwo;
-//        
-//        while(dashesCorrect && !changedWordOne.equals("") && !changedWordTwo.equals("")){
-//            
-//            if(changedWordOne.startsWith("-") || changedWordTwo.startsWith("-")){
-//                
-//                if(changedWordOne.startsWith("-") && changedWordTwo.startsWith("-")){
-//                    
-//                    dashesCorrect = true;
-//                    
-//                    changedWordOne = changedWordOne.substring(1);
-//                    changedWordTwo = changedWordTwo.substring(1);
-//                    
-//                } else{
-//                    dashesCorrect = false;
-//                }
-//            } else{
-//                
-//                dashesCorrect = true;
-//                
-//                changedWordOne = changedWordOne.substring(1);
-//                changedWordTwo = changedWordTwo.substring(1);
-//            }
-//        }
+        // return if the dashes are in the correct places
         return dashesCorrect;
     }
     
@@ -80,22 +54,33 @@ public class Question10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        // create a program that will examin to sets of characters and make sure the dashes are in the same locations
+        // do this within a method
+
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
+        // ask the user to enter the fisrt set of characters and store this in a variable
         System.out.print("Enter the first set of letters / digits: ");
         String setOne = input.nextLine();
+        
+        // ask the user to enter the second set of characters adn store this in a variable
         System.out.print("Enter the second set of letters / digits: ");
         String setTwo = input.nextLine();
         
+        // store the outcome of the method sameDashes in a variable
         boolean dashesProper = sameDashes(setOne, setTwo);
         
+        // if the dashes are in the same location print this
         if(dashesProper){
             System.out.println("The dashes (-) are in the same spots");
+            
+        // if the dashes are not int eh same location print this
         } else{
             System.out.println("The dashes (-) are not in the same spots");
         }
         
+        // close the scanner
         input.close();
     }
 }
