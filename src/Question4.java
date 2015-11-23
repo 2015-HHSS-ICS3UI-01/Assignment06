@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Question4 {
 public static double compoundInterest(double p, double r, int n){
-    //This formula 
+    //This formula takes all the inputed values and gets a final amount.
     double base = p*(1 + r);
     base = Math.pow(base, r);
     return base;
