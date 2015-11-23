@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -13,7 +16,7 @@ public class A6Q8 {
      * @param args the command line arguments
      */
     public static String season(int month, int day){
-        String season;
+        String season = "Invalid date.";
         if(month < 1
                 || month > 12
                 || day < 1
@@ -31,10 +34,29 @@ public class A6Q8 {
                 || (month == 6
                 && day <= 15)){
             season = "Spring";
-        }else if
+        }else if(month == 7 
+                || month == 8
+                || (month == 6
+                && day >= 16)
+                || (month == 9
+                && day <= 15)){
+            season = "Summer";
+        }else if(month == 10
+                || month == 11
+                || (month == 9
+                && day >= 16)
+                || (month == 12
+                && day <= 15)){
+            season = "Fall";
+        }
         return season;
     }
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number of the mounth.");
+        int month = input.nextInt();
+        System.out.println("Enter the number of what day it is.");
+        int day = input.nextInt();
+        System.out.println("The season you are in is " + season(month,day) + ".");
     }
 }
