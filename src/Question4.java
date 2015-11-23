@@ -12,6 +12,7 @@ import java.util.Scanner;
  */
 public class Question4 {
 public static double compoundInterest(double p, double r, int n){
+    //This formula 
     double base = p*(1 + r);
     base = Math.pow(base, r);
     return base;
@@ -19,10 +20,13 @@ public static double compoundInterest(double p, double r, int n){
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         System.out.println("Input a initial amount.");
+        //The user inputs their initial amount.
         double initial = input.nextDouble();
         System.out.println("Input a interest rate.");
+        //The user inputs the interest.
         double interest = input.nextDouble();
         System.out.println("Input a year.");
+        //The user inputs the amount of years passed.
         int year = input.nextInt();
         double answer = compoundInterest(initial, interest, year);
         System.out.println("Your balance is " + answer);
