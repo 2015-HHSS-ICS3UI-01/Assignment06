@@ -13,26 +13,28 @@ import java.util.Scanner;
 public class A6Q9 {
     
     public static void allDigitsOdd (int e){
-            int t = 0;
+            
         //determine if all of the digits are odd
-        while (e > 0){
-           
-           int i = e%10;
-           if (i == 1 || i == 3 || i == 5 || i == 7 || i == 9){
-               e = e - i;
-               t = t ++;
-           }else if (i == 0 || i == 2 || i == 4 || i == 6 || i == 8){ 
-               System.out.println("false");
-               t = 0;
-               break;
+        int t = 0;
+            
+            while (e > 0){
+                int i = e%10;
+                if (i == 1 || i == 3 || i == 5 | i == 7 || i == 9){
+                    e = e/10;
+                    t = t ++;
+                }else{ t = 0; break;
+            }}
+                if ( t > 0){
+                    System.out.println("True");
+                }else if (t == 0){
+                    System.out.println("False");
            }
             
-        }
-        if (t > 0){
-        System.out.println("true");
+        
+            }
         
         
-    }}
+    
     /**
      * @param args the command line arguments
      */
