@@ -21,6 +21,7 @@ public class Question10 {
             String sub1 = string1.substring(time, time2);
             String sub2 = string2.substring(time, time2);
             time = time + 1;
+            time2 = time2 + 1;
             if (sub1.equalsIgnoreCase("-") && !sub2.equalsIgnoreCase("-") || !sub1.equalsIgnoreCase("-") && sub2.equalsIgnoreCase("-")){
                 System.out.println("False");
                 break;
