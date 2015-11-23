@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Question2 {
 
 public static void examGrade(int grade){
+    //A grade is given to the user depending on their percentage
     if(grade >= 80){
         System.out.println("A");
     }else if(grade < 80 && grade >= 70){
@@ -28,6 +29,7 @@ public static void examGrade(int grade){
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int grade = input.nextInt();
+        //The user inputs their percentage into the computer.
         examGrade(grade);
     }
 }
