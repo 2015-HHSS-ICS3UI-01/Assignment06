@@ -11,10 +11,10 @@ public class A6Q5 {
 
     public static void chaotic(int total) {
         
-        for (int i = 0; i < total; i = i + 1) {
+        for (int i = 0; i < total; i = i++) {
             int randomNumber = (int) (Math.random() * (5 - 1 + 1)) + 1;
             //prints out random number of "*" and goes to next line
-            for (int s = 0; s < randomNumber; s = s + 1) {
+            for (int s = 0; s < randomNumber; s = s++) {
                 System.out.print("*");
             }
             //prints out to next line
