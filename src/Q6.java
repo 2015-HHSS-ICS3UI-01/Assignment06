@@ -11,19 +11,9 @@ import java.util.Scanner;
  */
 public class Q6 {
 
-    public static void lastDigit(int last) {
-        if (last < 0 && last > -10) {
-            System.out.println(last);
-           
-        } else if (last > 0 && last < 10) {
-
-            System.out.println(last);
-        } else if (last > 10) {
-            last = last / 10;
-
-        } else if (last < -10) {
-            last = last * 10;
-        }
+    public static int lastDigit(int last) {
+        last = last%10;
+        return last;
     }
 
     /**
@@ -32,7 +22,7 @@ public class Q6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int last = input.nextInt();
-        System.out.println("Last digit is ");
-        lastDigit(last);
+        last = lastDigit(last);
+        System.out.println("Last digit is "+last);
     }
 }
