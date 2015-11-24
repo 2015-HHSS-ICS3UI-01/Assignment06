@@ -28,7 +28,9 @@ public static double compoundInterest(double p, double r, int n){
         System.out.println("Input a year.");
         //The user inputs the amount of years passed.
         int year = input.nextInt();
+        //The calculations are done in the method comoundInterest.
         double answer = compoundInterest(initial, interest, year);
+        //The answer is given to the user once all calculations are done.
         System.out.println("Your balance is " + answer);
     }
 }
