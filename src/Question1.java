@@ -5,19 +5,19 @@ import java.util.Scanner;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author stahc1596
  */
 public class Question1 {
 
-public static double CircleA(double radius){
-    //The formula for finding the area of a circle.
-    Double area = Math.PI*radius*radius;
-    //The answer is returned to the main method.
-    return area;
-}
+    public static double CircleA(double radius) {
+        //The formula for finding the area of a circle.
+        Double area = Math.PI * radius * radius;
+        //The answer is returned to the main method.
+        return area;
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter a radius for your circle.");
