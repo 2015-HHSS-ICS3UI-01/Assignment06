@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A6Q1 {
+public class A6Q01 {
 
     // 
     public static double circleArea(double radius) {

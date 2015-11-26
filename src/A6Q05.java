@@ -7,7 +7,7 @@
  *
  * @author iorgs3184
  */
-public class A6Q5 {
+public class A6Q05 {
 
     public static void chaotic(int total) {
         

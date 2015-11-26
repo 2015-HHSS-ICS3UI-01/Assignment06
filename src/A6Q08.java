@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A6Q8 {
+public class A6Q08 {
 
     public static void season(int month, int day) {
 

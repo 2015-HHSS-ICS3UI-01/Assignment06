@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A6Q3 {
+public class A6Q03 {
 
     public static void factors(int number) {
 

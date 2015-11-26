@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A6Q4 {
+public class A6Q04 {
 
     public static double compundIntrest(double P, double r, int n) {
 

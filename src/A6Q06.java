@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A6Q6 {
+public class A6Q06 {
 
     public static void lastDigit(int number) {
 

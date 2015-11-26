@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A6Q2 {
+public class A6Q02 {
 
     public static void examGrade(int grade) {
         //uses the users number to give them their mark as a letter

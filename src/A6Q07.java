@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A6Q7 {
+public class A6Q07 {
 
     public static void firstDigit(int number) {
 

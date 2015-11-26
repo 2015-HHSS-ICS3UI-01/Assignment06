@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A6Q9 {
+public class A6Q09 {
 
     public static void allDigitsOdd(int number) {
 
