@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Q6 {
 
     public static int lastDigit(int last) {
+        //removing the last digit from whole number
         last = last%10;
         return last;
     }
@@ -21,9 +22,10 @@ public class Q6 {
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+       //user inputs number
         System.out.println("Enter a number");
         int last = input.nextInt();
-        
+        //Does the method to the inputted number
         last = lastDigit(last);
         System.out.println("Last digit is "+last);
     }
