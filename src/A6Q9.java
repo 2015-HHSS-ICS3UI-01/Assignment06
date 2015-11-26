@@ -16,7 +16,7 @@ public class A6Q9 {
             
         //determine if all of the digits are odd
         
-        //start odd didgit count at 0
+        //start counting the odd digits at zero
             int t = 0;
             
             while (e > 0){
