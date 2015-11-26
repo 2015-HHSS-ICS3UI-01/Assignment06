@@ -12,6 +12,7 @@ import java.util.Scanner;
  */
 public class Q1 {
     public static double circleArea(double r){
+        //Formula for finding a circle's area
         double area = Math.PI*Math.pow(r, 2);
         return area;
     }

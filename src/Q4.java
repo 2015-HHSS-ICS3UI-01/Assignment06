@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Q4 {
 
     public static void compoundInterest(double initial, double interest, int years) {
+       //Does B=P(1+r)^n here to get balance
         double r = interest + 1;
         double n = Math.pow(r, years);
         double balance = n * initial;

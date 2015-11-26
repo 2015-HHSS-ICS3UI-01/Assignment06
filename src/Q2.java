@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Q2 {
 
     public static void examGrade (int grade){
-        
+        //Checks what grade the exam percentage is
         if(grade<50){
             System.out.println("F");
         }else if(grade>=50&&grade<=59){
@@ -32,8 +32,11 @@ public class Q2 {
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+       //Asks user for exam percentage
         System.out.println("Enter exam percentage");
+        //gets percentage from user
         int grade = input.nextInt();
+        //uses the "examGrade" method
         examGrade(grade);
     }
 }
