@@ -35,7 +35,7 @@ public class Question6 {
         Scanner input = new Scanner(System.in);
         
         // ask the user what number they would like to find the last digit of and store this in a variable
-        System.out.print("Enter the number: ");
+        System.out.print("To determine the last digit of a number, enter the number: ");
         int number = input.nextInt();
         
         // create a variable to store the return of the method lastDigit and display the result

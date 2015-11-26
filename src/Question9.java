@@ -71,7 +71,7 @@ public class Question9 {
         Scanner input = new Scanner(System.in);
         
         // ask the user to enter a number and store this in a variable
-        System.out.print("Enter a number: ");
+        System.out.print("To determine if a number is odd, enter a number: ");
         int number = input.nextInt();
         
         // create a variable to store the outcome of the method allDigitsOdd

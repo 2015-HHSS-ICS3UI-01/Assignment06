@@ -35,16 +35,18 @@ public class Question4 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
+        System.out.println("To determine the compount interest enter the following information.");
+        
         // ask the user what their initial principle is and store this into a variable
-        System.out.print("What is your initial principle? ");
+        System.out.print("Enter the initial principle: ");
         double initialPrinciple = input.nextDouble();
         
         // ask the user what their interest rate is and store this into a variable
-        System.out.print("What is your interest rate? ");
+        System.out.print("Enter the interest rate: ");
         double interestRate = input.nextDouble();
         
         // ask the user how many years there are and store this in a variable
-        System.out.print("How many years of interest? ");
+        System.out.print("Enter the number of years: ");
         int years = input.nextInt();
         
         // store the method compoundInterest into a variable that can be used

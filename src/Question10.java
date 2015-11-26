@@ -60,6 +60,8 @@ public class Question10 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
+        System.out.println("To determine if two sets characters have '-' in the same positions enter the following information.");
+        
         // ask the user to enter the fisrt set of characters and store this in a variable
         System.out.print("Enter the first set of letters / digits: ");
         String setOne = input.nextLine();

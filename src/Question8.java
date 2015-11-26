@@ -93,6 +93,8 @@ public class Question8 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
+        System.out.println("To determine the season enter the following information.");
+        
         // ask the user what the month is and store this in a variable
         System.out.print("What month is it? ");
         int month = input.nextInt();

@@ -57,7 +57,7 @@ public class Question5 {
         Scanner input = new Scanner(System.in);
         
         // ask the user how many lines they want and store this number in a variable
-        System.out.print("Enter the number of lines of pattern: ");
+        System.out.print("To output a random set of symbolsms, enter the number of lines of pattern: ");
         int lines = input.nextInt();
         
         // display the outcome of the method

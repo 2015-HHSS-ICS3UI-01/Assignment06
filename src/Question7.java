@@ -46,7 +46,7 @@ public class Question7 {
         Scanner input = new Scanner(System.in);
         
         // ask the user the number they wish to find the first digit of and store this in a variable
-        System.out.print("Enter the number: ");
+        System.out.print("To determine the first digit of a number, enter the number: ");
         int number = input.nextInt();
         
         // create a variable to store outcome of the mehtod firstDigit and display the outcome

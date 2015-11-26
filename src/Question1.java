@@ -15,8 +15,10 @@ public class Question1 {
     // create method to find the cicle area when given the radius
     public static double circleArea(double radius){
         
-        // create variable for the area of the circle and return it
+        // create variable for the area of the circle
         double areaOfCircle = Math.PI * Math.pow(radius, 2);
+        
+        // return area back
         return areaOfCircle;
     }
     
@@ -31,7 +33,7 @@ public class Question1 {
         Scanner input = new Scanner(System.in);
         
         // ask the user what the radius is and store the data using a variable of the radius
-        System.out.print("What is the radius of the circle? : ");
+        System.out.print("Enter the radius of the circle to determine the area: ");
         double radius = input.nextDouble();
         
         // create variable to store the area of the circle
