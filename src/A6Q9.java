@@ -13,21 +13,16 @@ public class A6Q9 {
 
     public static void allDigitsOdd(int number) {
 
-        for (int i = 0; i < number; i++) {
+        //repeats loop untiol no more numbers
+        while (number % 2 == 1) {
+            //takes off the last number and then repeats
             number = number / 10;
-            number = number % 10;
-
-            if (number == 1 || number == 3 || number == 5
-                    || number == 7 || number == 9) {
-                number = 1;
-            } else if (number == 0 || number == 2 || number == 4
-                    || number == 6 || number == 8) {
-                number = 0;
-            }
         }
-        if (number == 1) {
+        //number is true if equals 0
+        if (number / 2 == 0) {
             System.out.println("TRUE");
-        } else if (number == 0) {
+        }//number is false if doesn't equal 0 
+        else if (number / 2 != 0) {
             System.out.println("FALSE");
         }
     }
@@ -37,11 +32,12 @@ public class A6Q9 {
      */
     public static void main(String[] args) {
 
+        //new scanner
         Scanner input = new Scanner(System.in);
-
+        //asks user to type a number
         System.out.print("Type in a number: ");
         int number = input.nextInt();
-
+        //reuturns number typed to allDigitsOdd method
         allDigitsOdd(number);
 
     }
