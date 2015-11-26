@@ -32,6 +32,7 @@ public class A6Q7 {
     public static void main(String[] args) {
         //new scanner 
         Scanner input = new Scanner(System.in);
+               
         //ask user a number 
         System.out.println(" please enter a number ");
         //allow user to enter a number 
