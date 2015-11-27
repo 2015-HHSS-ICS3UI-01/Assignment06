@@ -5,19 +5,23 @@ import java.util.Scanner;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author pircn0556
  */
 public class Q10 {
-    public static void sameDashes(String one, String two){
-        if(one.equals(two)){
-            System.out.println("True");
-    }else{
-            System.out.println("False");
+
+    public static boolean sameDashes(String one, String two) {
+         for (int i = 1; i <= ; i++){
+             
+         }
+        if (one.equals(two)) {
+            return true;
+        } else {
+            return false;
         }
     }
+
     /**
      * @param args the command line arguments
      */
@@ -27,6 +31,6 @@ public class Q10 {
         String one = input.nextLine();
         System.out.println("Enter another line with dashes");
         String two = input.nextLine();
-        sameDashes(one,two);
+        sameDashes(one, two);
     }
 }

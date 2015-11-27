@@ -12,17 +12,17 @@ import java.util.Scanner;
 public class Q3 {
 
     public static void factors(int f) {
-       //If number cannot be factored, gets next number to check if factorable
+        //If number cannot be factored, gets next number to check if factorable
         for (int i = 1; i <= f; i++) {
             int remainder = f % i;
 
             //If number is factorable, its output here
             if (remainder == 0) {
                 System.out.println(i);
-            } 
+            }
         }
 
-   
+
     }
 
     /**
@@ -36,7 +36,7 @@ public class Q3 {
         //Tells user the result
         System.out.println("Factored numbers of " + f + " is ");
         factors(f);
-        
+
 
     }
 }
