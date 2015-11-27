@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Question10 {
 
-    public static void sameDashes(String string1, String string2) {
+    public static String sameDashes(String string1, String string2) {
         int time = 0;
         int time2 = 1;
         //These commmands find the length of the words
@@ -28,14 +28,13 @@ public class Question10 {
             //If the dashes are not in the same spots, then the computer tells the
             //user false.
             if (sub1.equalsIgnoreCase("-") && !sub2.equalsIgnoreCase("-") || !sub1.equalsIgnoreCase("-") && sub2.equalsIgnoreCase("-")) {
-                System.out.println("False");
-                break;
+                return "false";
             }
 
         }
         //If the dashes are in the same spot, then the computer tells the user true.
-        if (time > length) {
-            System.out.println("True");
+        if (time > length || time > length2) {
+            return "True";
         }
     }
 
