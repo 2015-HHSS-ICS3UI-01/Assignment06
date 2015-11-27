@@ -10,19 +10,17 @@
 public class A6Q7 {
 
     public static int firstDigit(int number) {
-        int first = number;
-        while (number >= 0) {
-            if (first <= 9) {
+        while (number == number) {
+            if (number < 0) {
+                number = number * -1;
+            }
+            if (number <= 9) {
                 break;
             }
-            first = number / 10;
+            number = number / 10;
         }
-
-        while (number < 0) {
-            first = number / 10 * -1;
-        }
-        System.out.println(first);
-        return first;
+        System.out.println(number);
+        return number;
     }
 
     /**
@@ -30,6 +28,6 @@ public class A6Q7 {
      */
     public static void main(String[] args) {
         //
-        firstDigit(567);
+        firstDigit(-892345);
     }
 }
