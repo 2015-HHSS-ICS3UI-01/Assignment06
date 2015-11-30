@@ -50,7 +50,7 @@ public class Question2 {
         Scanner input = new Scanner(System.in);
         
         // ask the user what their exam percentage is and store the data of the percentage
-        System.out.print("Enter your Exam Percentaage to determine the grade level: ");
+        System.out.print("Enter your Exam Percentage to determine the grade level: ");
         double examPercentage = input.nextDouble();
         
         // display output of exam grade variable

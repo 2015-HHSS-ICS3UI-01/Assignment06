@@ -13,27 +13,23 @@ import java.util.Scanner;
  */
 public class Question7 {
     
-    // create a mthod that will determine the first digit of a number when given the  number requested by the user
+    // create a method that will determine the first digit of a number when given the  number requested by the user
     public static int firstDigit(int number) {
         
-        // store in a variable that will determine the first digit of the number
-        int firstNumber = number;
-        
-        // store in a variable the last digit of a number
-        int lastNumber;
-        
-        // while the first number is greater than 10 then continue the process of finding the first digit
-        while(firstNumber >= 10){
-            // the program will get rid of the digits before the last digit
-            // as a number divided by 10 will have a remainder of the first digit
-            lastNumber = number % 10;
-            // the first digit number will decrease a digit to continue the process of obtaining just the first digit
-            // by subtracting the last digit by the first digit to get the last digit of the number to a value of 0
-            // and then dividing it by 10 to get rid of that last digit
-            firstNumber = (firstNumber - lastNumber) / 10;
+        // To determine first digit of a number, the digit is not impacted
+        // by whether number is positive or negative so make the number 
+        // a positive number to simplify the later loop
+        if ( number < 0 ) {
+            number = number * -1;
         }
-        // return the first digit
-        return firstNumber;
+        
+        // To determine the first digit of the number, continue dividing the 
+        // number by 10 until the result can no longer be divided by 10.
+        while ( number >= 10) {
+            number = number / 10;
+        }
+   
+        return number;
     }
     
     /**

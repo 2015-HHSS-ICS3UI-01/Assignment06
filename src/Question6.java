@@ -15,14 +15,20 @@ public class Question6 {
     
     // create a method that will determine the last digit of a number when given that number
     public static int lastDigit(int number) {
+
+        // To determine last digit of a number, the digit is not impacted
+        // by whether number is positive or negative so make the number 
+        // a positive number to simplify the later loop
+        if ( number < 0 ) {
+            number = number * -1;
+        }
         
         // create a variable to find the last digit of the number
-        // the program will get rid of the digits before 
         // as a number divided by 10 will have a remainder of the last digit
-        int lastNumber = number % 10;
+        int digit = number % 10;
         
         // return the last digit
-        return lastNumber;
+        return digit;
     }
     
     /**

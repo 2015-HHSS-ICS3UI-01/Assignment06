@@ -17,69 +17,39 @@ public class Question8 {
     public static String season(int month, int day) {
         
         // create a variable to store the season
-        // there is no season yet
-        String seasonType = "no season";
+        String seasonType;
+          
         
-        // if the month is a value between 1-12 and the day is between 1-31 then it is a real date
-        if(month < 12 && day <= 31 && month <= 1 && day >= 1){
+        // Test the month and day parameters to ensure they are in valid ranges before 
+        // attempting to determine a season.   Note: not attempting to handle leap year special case
+        if (month >=1 && day >=1 && month <= 12 && day <= 31) {
             
-            // if the month is less than 12 and less than 3 then it has to be winter
-            if(month < 12 && month < 3){
+            // Assign a season based on the following month/day scheme
+            //     If the date falls between 12/16 and 3/15 - return "Winter". 
+            //     If the date falls between 3/16 and 6/15, - return "Spring". 
+            //     If the date falls between 6/16 and 9/15, - return "Summer". 
+            //     If the date falls between 9/16 and 12/15 - return "Fall".
+            if ( ( month < 3 ) || ( month == 3 && day <= 15 ) || ( month == 12 && day >= 16 ) ) {
                 seasonType = "Winter";
-            
-            // if the month is equal to 3 then the season is either winter or spring
-            } else if(month == 3){
-                // if the day is between 1-15 then it is winter
-                if(day <= 15){
-                    seasonType = "Winter";
-                // if the day is between 16-31 then it is spring
-                } else{
-                    seasonType = "Spring";
-                }
-            
-            // if the month is greater than 3 and less than 6 then it has to be spring
-            } else if(month > 3 && month < 6){
-                seasonType = "Spring";
-            
-            // if the month is equal to 6 then the season is either spring or summer
-            } else if(month == 6){
-                // if the day is between 1-15 then it is spring
-                if(day <= 15){
-                    seasonType = "Spring";
-                // if the day is between 16-31 then it is summer
-                } else{
-                    seasonType = "Summer";
-                }
-            
-            // if the month is greater than 6 and less than 9 then it has to be summer
-            } else if(month > 6 && month < 9){
-                seasonType = "Summer";
-            
-            // if the month is equal to 9 then the season is either summer or fall
-            } else if(month == 9){
-                // if the day is between 1-15 then it is summer
-                if(day <= 15){
-                    seasonType = "Summer";
-                // if the day is between 16-31 then it is fall
-                } else{
-                    seasonType = "Fall";
-                }
-            
-            // if the month is greater than 9 and less than 12 then it has to be fall
-            } else if(month > 9 && month < 12){
-                seasonType = "Fall";
-            
-            // if the month is equal to 12 then the season is either fall or summer
-            } else if(month == 12){
-                if(day <= 15){
-                    // if the day is between 1-15 then it is fall
-                    seasonType = "Fall";
-                // if the day is between 16-31 then it is winter
-                } else{
-                    seasonType = "Winter";
-                }
             }
+            else if ( ( month < 6 ) || ( month == 6 && day <= 15 ) ) {
+                seasonType = "Spring";
+            }
+            else if ( ( month < 9 ) || ( month == 9 && day <= 15 ) ) {
+                seasonType = "Summer";
+            }
+            else if ( ( month < 12 ) || ( month == 12 && day <= 15 ) ) {
+                seasonType = "Fall";
+            }
+            else {
+                seasonType = "Invalid month or day parameter";
+            }
+        
+        // Invalid month or day parameter
+        } else {
+            seasonType = "Invalid month or day parameter";
         }
+            
         // return what the season is
         return seasonType;
     }

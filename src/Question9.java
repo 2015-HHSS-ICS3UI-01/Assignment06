@@ -15,50 +15,49 @@ public class Question9 {
 
     // create a method to determine if all the digits in a number are odd when given a number
     public static boolean allDigitsOdd(int number) {
-        
+                
         // create a variable to determine if the number is completely odd or not
         // it will first start to be true as the numbers have not been checked yet
         boolean odd = true;
-        
-        // create a variable to store what the last digit of a number is
-        int remainder;
-        
+
         // create a variable to store the last digit of the number
         int lastDigit;
         
+        // Support negative number parm by convert to postive number, this doesn't 
+        // impact whether the digits are odd or even
+        if ( number < 0) {
+            number = number * -1;
+        }
+        
         // while the digits so far in the number are odd then continue to check the rest of the number
-        while(odd){
+        while( odd ){
             
             // the last digit of the number is the remainder of the number divided by 10
             // this will eliminate the numbers before and keep the last digit
             lastDigit = number % 10;
             
             // the remainder of the last digit divided by 2 will indentify if the number is digit odd or even
-            remainder = lastDigit % 2;
+            int remainder = lastDigit % 2;
+            if (  remainder == 0 ) {
+                // digit is even
+                odd = false;                          
+            } else {
+                // digit is even
+                odd = true;
+            }
             
-            // if the remainder is equal to 0 then the last digit is even
-            // if it is not even to 0 then it is still odd
-            if(remainder != 0 && number > 0){
-
-                // take off the remainder of the number that was just checked
-                // this will continue to the next number
-                number = (number - lastDigit) / 10;
-                
-                // if the number now equals 0 then the loop should break
-                if(number == 0){
-                    break;
-                }
-                
-            // if the remainder is equal to 0 then the number is not all odd
-            // therefore odd is false
-            }else{
-                odd = false;
+            // determine if there are remaining digits in the number to check
+            // there are additional digits to check if the remaining number is greater than 10
+            if ( number > 10 ) {
+                // more digits remain, eliminate digit by deviding by 10 and repeat
+                number = number / 10;
+            } else {
+                // else no more digits in number to check, break out of the loop
+                break;
             }
         }
-        
         // return whether the number is all odd or not
-        return odd;
-        
+        return odd;       
     }
     
     /**
@@ -77,13 +76,13 @@ public class Question9 {
         // create a variable to store the outcome of the method allDigitsOdd
         boolean answer = allDigitsOdd(number);
         
-        // if the number is all odd then output this to the user
+        // if the number is all odd digits then output this to the user
         if(answer == true){
-            System.out.println("The number is all odd");
+            System.out.println("The number has all odd digits");
         
-        // if the number is not all odd output this to the user
+        // if the number is not all odd digits output this to the user
         } else{
-            System.out.println("The number is not all odd");
+            System.out.println("The number does not have all odd digits");
         }
         
         // close the scanner
