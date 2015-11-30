@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class A6Q10 {
 
-    public static void sameDashes(String dashes) {
+    public static void sameDashes(String dashes1, String dashes2) {
 
         System.out.print("Loading");
         for (int i = 7; i > 0; i--) {
@@ -24,6 +24,10 @@ public class A6Q10 {
                 e.printStackTrace();
             }
         }
+        System.out.println();
+        System.out.println("HI");
+    
+    
     }
 
     /**
@@ -39,6 +43,6 @@ public class A6Q10 {
         System.out.print("Please Type something else: ");
         String dashes2 = input.next();
 
-        sameDashes(dashes);
+        sameDashes(dashes1, dashes2);
     }
 }
