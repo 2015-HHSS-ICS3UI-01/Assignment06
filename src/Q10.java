@@ -12,15 +12,21 @@ import java.util.Scanner;
 public class Q10 {
 
     public static boolean sameDashes(String one, String two) {
-         for (int i = 1; i <= ; i++){
+         
+        for (int i = 1; i <= 0; i++){
+             if(one.charAt(i)=='-'){
+                 int dash=i;
+                 if(one.charAt(dash)!='-'){
+                     return false;
+                 }
+             }
              
          }
-        if (one.equals(two)) {
-            return true;
-        } else {
-            return false;
+        return true;
         }
-    }
+       
+
+    
 
     /**
      * @param args the command line arguments
@@ -31,6 +37,7 @@ public class Q10 {
         String one = input.nextLine();
         System.out.println("Enter another line with dashes");
         String two = input.nextLine();
-        sameDashes(one, two);
+        System.out.println(sameDashes(one, two));
     }
 }
+
