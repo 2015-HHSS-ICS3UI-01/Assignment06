@@ -27,8 +27,8 @@ public class A6Q10 {
             if (dash == dash2) {
 
                 //cut off the string from the start to the dashes   
-                firstString = firstString.substring(0, dash + 1);
-                secondString = secondString.substring(0, dash2 + 1);
+                firstString = firstString.substring(dash + 1);
+                secondString = secondString.substring(dash2 + 1);
 
                 //if no other dashes can be found tell user it is true
                 if (dash == -1 && dash2 == -1) {
