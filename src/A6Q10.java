@@ -17,12 +17,12 @@ public class A6Q10 {
         int dashes2 = string2.indexOf("-");
 
         //if the places of the dashes are the same print out true
-        if (dashes == dashes2) {
+        while (dashes == dashes2) {
             System.out.println("True");
             return "True";
             
         } // if the places of the dashes are not the same print out false
-        else {
+        if (dashes != dashes) {
             System.out.println("False");
             return "False";
         }
