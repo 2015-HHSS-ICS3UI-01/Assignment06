@@ -7,27 +7,20 @@ import java.util.Scanner;
  */
 /**
  *
- * @author iorgs3184
+ * @author preej0747
  */
 public class A6Q10 {
 
-    public static void sameDashes(String dashes1, String dashes2) {
+    public static void sameDashes(String partOne, String partTwo) {
 
-        System.out.print("Loading");
-        for (int i = 7; i > 0; i--) {
-            System.out.print(".");
+        int dashes = partOne.indexOf("-");
+        int dashes2 = partTwo.indexOf("-");
 
-            //delay 750 milliseconds
-            try {
-                Thread.sleep(750);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        if (dashes == dashes2) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
         }
-        System.out.println();
-        System.out.println("HI");
-    
-    
     }
 
     /**
