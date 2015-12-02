@@ -13,12 +13,12 @@ public class A6Q10 {
 
     public static void sameDashes(String partOne, String partTwo) {
 
-        int dashes = partOne.indexOf("-");
-        int dashes2 = partTwo.indexOf("-");
-
-        if (dashes == dashes2) {
-            System.out.println("True");
-        } else {
+        if(partOne.contains("-") || partTwo.contains("-")){
+            for(int i = 0; i < partOne.length(); i++){
+                char dashes1 = partOne.charAt(i);
+                char dashes2 = partTwo.charAt(i);
+            }
+        }else{
             System.out.println("False");
         }
     }
