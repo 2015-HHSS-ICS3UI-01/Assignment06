@@ -16,13 +16,13 @@ public class A6Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // 
+        // input a scanner
         Scanner input = new Scanner(System.in);
-        
+        //grades
         System.out.println(" Please enter a grade ");
         
         int exameGrade = input.nextInt();
-        
+        // value of the grade
         if (exameGrade< 50) {
             System.out.println(" F ");
         }

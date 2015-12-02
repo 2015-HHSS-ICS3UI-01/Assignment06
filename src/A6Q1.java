@@ -19,9 +19,9 @@ public class A6Q1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // 
+        //input a scanner
         Scanner input = new Scanner(System.in);
-        
+        // Print out the radius of a circle
         System.out.println("Please enter the radius of the circle");
         double r = input.nextDouble();
         double answer = areaCircle(r);

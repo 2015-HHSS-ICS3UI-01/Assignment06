@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class A6Q9 {
 
     public static boolean allDigitsOdd(int odd) {
-
+        // what number is
         while (true) {
             int number = odd % 10;
 
@@ -35,10 +35,11 @@ public class A6Q9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //
+        // input a scanner
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter a number ");
         int number = input.nextInt();
+        // formula
         System.out.println(allDigitsOdd(number));
     }
 }
