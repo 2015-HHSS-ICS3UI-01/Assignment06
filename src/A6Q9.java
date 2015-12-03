@@ -29,7 +29,7 @@ public class A6Q9 {
                     || lastDigit == 6
                     || lastDigit == 4
                     || lastDigit == 2) {
-                //if any odd number is found then return false 
+                //if any odd number is found then return false. 
                 return false;
             }
             //if the number is 0(there is nothing left to check) then break loop
