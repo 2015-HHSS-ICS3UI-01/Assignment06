@@ -20,13 +20,15 @@ public class A6Q5 {
         while (linecount < numberlines) {
             //generate random number between 1 and 5 and store in variable
             int randNum = (int) (Math.random() * (5)) + 1;
-             
+             //set asterisks to 0
             int asterisks = 0;
+            //as long as the asterisks is less the the random number print a asterisks and add one each time 
             while (asterisks < randNum) {
                 System.out.print("*");
                 asterisks++;
             }
             System.out.println();
+            //add one to the line count each time 
             linecount++;
         }
 
@@ -42,7 +44,7 @@ public class A6Q5 {
         System.out.println("please enter the number of lines you would like to print");
         //allow ussers to enter amount of lines
         int numberlines = input.nextInt();
-
+      //retunr to method above 
         chaotic(numberlines);
 
 

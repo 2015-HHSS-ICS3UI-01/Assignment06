@@ -18,6 +18,7 @@ public class A6Q6 {
             number = number * (-1);
 
         }
+        //take the last digit of the number and return it 
         number = number % 10;
         return (number);
 

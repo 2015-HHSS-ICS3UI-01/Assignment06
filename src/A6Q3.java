@@ -41,6 +41,7 @@ public class A6Q3 {
           System.out.println("please enter a number ");
           //allow user to enter number 
           int num=input.nextInt();
+          //return to method above 
           factor(num);
           
           

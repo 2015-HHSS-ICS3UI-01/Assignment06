@@ -48,7 +48,7 @@ public class A6Q2 {
          //ask user their grade 
          System.out.println("Whats numerical grade did you get on the test");
          int mark=input.nextInt();
-         
+         //return to method above 
          examgrade (mark);
          
       

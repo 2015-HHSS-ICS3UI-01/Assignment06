@@ -37,7 +37,7 @@ public class A6Q9 {
                 break;
             }
         }
-        //if no even numbers are foudn then return true 
+        //if no even numbers are found then return true 
         return true;
     }
 
