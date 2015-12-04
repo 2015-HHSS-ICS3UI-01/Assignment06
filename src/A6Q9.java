@@ -23,7 +23,7 @@ public class A6Q9 {
         //find the first number        
                 int i = e%10;
         //if it is odd        
-                if (i == 1 || i == 3 || i == 5 | i == 7 || i == 9){
+                if (i == 1 || i == 3 || i == 5 || i == 7 || i == 9){
         //divide by ten to move to the next digit            
                     e = e/10;
         //add a count to show that that is an odd number            
