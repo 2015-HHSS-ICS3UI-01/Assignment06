@@ -21,7 +21,7 @@ public class A6Q10 {
             //checks if words contain dashes
             if (!dashes1.contains("-") || !dashes2.contains("-")) {
                 //prints out false and then breaks
-                System.out.println("False");
+                System.out.println("FALSE");
                 break;
             }//checks if the dashes are in the same place
             else if (firstDash == secondDash && firstDash >= 0) {
