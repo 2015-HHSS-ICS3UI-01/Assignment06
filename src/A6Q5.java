@@ -17,23 +17,23 @@ public class A6Q5 {
          
          // if the random number is 1
          if(randNum == 1){
-             //print out 1 star
+             //print out 1 asterisk
          System.out.println("*");
          } //if the random number is 2
          else if(randNum == 2){
-             //print out 2 stars
+             //print out 2 asterisks 
              System.out.println("**");
          } //if the random number is 3
          else if(randNum == 3) {
-             //print out 3 stars
+             //print out 3 asterisks 
              System.out.println("***");
          } // if the random number is 4
          else if(randNum == 4) {
-             //print out 4 stars
+             //print out 4 asterisks 
              System.out.println("****");
          } //if the random number is 5
-         else if(randNum == 5) {
-             //print out 5 stars
+         else {
+             //print out 5 asterisks 
              System.out.println("*****");
          }
     }

@@ -8,35 +8,26 @@
  * @author watsk8668
  */
 public class A6Q9 {
-
+    //function type method that returns whether a number has any even numbers
     public static String allDigitsOdd(int number) {
-        String trueFalse = "tF";
-        int digits = number;
-        int divide = 10;
-        while (digits > 9) {
-            if (digits == 0 || digits == 2 || digits == 4 || digits == 6 || digits == 8) {
-                trueFalse = "False";
-                break;
+        //loop
+        while (number > 0) {
+            //check to see if the number is even
+            if (number % 2 == 0) {
+                return "false";
             }
-            digits = number / divide;
-            divide = divide * 10;
+            //isolate the last digit of the number
+            number = number / 10;
         }
-            if (digits == 0 || digits == 2 || digits == 4 || digits == 6 || digits == 8) {
-                trueFalse = "False";
-            } else {
-                trueFalse = "True";
-            }
-            System.out.println(trueFalse);
-            return trueFalse;
+        //if all digits are odd return true
+        return "true";
     }
 
-        /**
-         * @param args the command line arguments
-         */
-    
-
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        //
-        allDigitsOdd(1675);
+        //run the method and print out true or false
+        System.out.println(allDigitsOdd(1737));
     }
 }

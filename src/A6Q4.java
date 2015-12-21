@@ -13,8 +13,6 @@ public class A6Q4 {
     public static double compoundInterest(double principle, double interest, int years) {
         //equation (B=P(1+r)^n) 
         double balance = principle * Math.pow(1 + interest, years);
-        //print the balance to the screen 
-        System.out.println(balance);
         return balance;
     }
 
@@ -23,6 +21,7 @@ public class A6Q4 {
      */
     public static void main(String[] args) {
         //enter the initial principal being added to, the interest rate as a decimal number, and the number of years
-        compoundInterest(100, .04, 3);
+        //print compoundInterest to the screen
+        System.out.println(compoundInterest(100, .04, 3));
     }
 }
