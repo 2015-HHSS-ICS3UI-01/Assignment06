@@ -16,22 +16,30 @@ public class A6Q3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-  Scanner input = new Scanner(System.in);
         
-  
-    int First = 10;
-    int Second = 0; //Input the interger of your choice here
-    int Third = 30;
+    }
 
-    int a = First % Second;
-    int b = Third % Second;
-        System.out.println("Factor(10) is " + a);
-        System.out.println("Factor(30) is " + b);
-    
-  }
+  public static void factors(int numberos){
+      Scanner input = new Scanner(System.in);
+     System.out.println("Please enter the number");
+     int I = input.nextInt();
+     factors(I);
+    for(int i = numberos; i > 0; i--){
+        int possiblefactors = numberos % i;
+        if(possiblefactors == 0){
+       System.out.println(i);     
+        }
+    }
+}
+
+
+    }
+
+
+   
 
  
-}
+
 
 
 

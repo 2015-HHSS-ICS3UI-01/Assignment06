@@ -10,28 +10,22 @@ import java.util.Scanner;
  *
  * @author ramli8368
  */
-public class A6Q6 {
+public class A6Q7 {
 
-   
-    
-    public static int A6Q6(int d) { 
-      return Math.abs(d-((int)(d/10))*10);
-}
-    
-    
-   
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        
-       
-int i = n%10;
-System.out.println("the last diget is " + i);
-    
-}
+      public static void firstDigit(int n){
+int i = n/10;
+System.out.println("the first diget is " + i  );
 
-Scanner input = new Scanner(System.in);{
+Scanner input = new Scanner(System.in);
 System.out.println("enter a number");
 int i = input.nextInt();
-lastDigit(i);
+firstDigit(i);
 
     }
+}
 
+    

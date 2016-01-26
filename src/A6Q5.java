@@ -16,17 +16,40 @@ public class A6Q5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-            Scanner in = new Scanner(System.in);
-            
-             // get two random double numbers
-            double x = Math.random();
-            double y = Math.random();
+        
+    }
 
-   // print the numbers and print the higher one
-   System.out.println("Random number 1:" + x);
-   System.out.println("Random number 2:" + y);
-   System.out.println("Highest number:" + Math.max(x, y));
+public static void Chaotic(){
+for (int i = 7; i > 0; i-- ){    
+int randNum =(int)(Math.random()*(5-1+1))+1;
+
+
+if(randNum == 1){
+    System.out.println("*");
+}   
+if(randNum == 2){
+    System.out.println("**");
+}   
+if(randNum == 3){
+    System.out.println("***");
+}
+if(randNum == 4){
+    System.out.println("****");
+}    
+if(randNum == 5){
+    System.out.println("*****");
+}    
+if(randNum == 6){
+    System.out.println("******");
+}    
+if(randNum == 7){
+    System.out.println("*******");
+}    
+}
+}
+    
+
    }
             
-    }
+    
 
