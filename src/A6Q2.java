@@ -34,7 +34,6 @@ public class A6Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         // Save the user's input
         Scanner input = new Scanner(System.in);
         // Ask the user what their grade percantage is
