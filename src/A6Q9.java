@@ -21,7 +21,6 @@ public class A6Q9 {
             char lastNum = number.charAt(i);
             // check if last digit is odd, if it is, then remove digit by dividing by 10
             if (lastNum == 1 || lastNum == 3 || lastNum == 5 || lastNum == 7) {
-
             } else {
                 // If all numbers aren't the ones listed above, then the method is false (all numbers are even)
                 allOdd = false;
