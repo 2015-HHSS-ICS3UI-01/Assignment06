@@ -11,16 +11,40 @@ import java.util.Scanner;
  */
 public class A6Q10 {
 
-    public static void sameDashes(String dash1, String dash2) {
-        StringBuilder sBuilder = new StringBuilder(dash1);
-        for (int i = 0; i < sBuilder.length(); i++) {
-            if (sBuilder.charAt(i) == '-' && dash2.charAt(i) == '-') {
-                sBuilder.delete(0, i);
-                System.out.println("True");
+    public static String sameDashes1(String string1) {
+        // New sBuilder
+        StringBuilder sBuilder = new StringBuilder();
+        // For loop going through each character of the user's input
+        for (int i = 0; i < string1.length(); i++) {
+            // ADD ANOTHER INTEGER!
+            if (sBuilder.charAt(i) == '-') {
+                // If both dashes are at the same place then the program will print out 'True'
+                sBuilder.append("True");
             } else {
-                System.out.println("False");
+                // If not true, then it is automatically false
+                sBuilder.append("False");
             }
         }
+        // Return the answer back
+        return sBuilder.toString();
+    }
+
+    public static String sameDashes2(String string2) {
+        // New sBuilder
+        StringBuilder sBuilder = new StringBuilder();
+        // For loop going through each character of the user's input
+        for (int i = 0; i < string2.length(); i++) {
+            // ADD ANOTHER INTEGER!
+            if (sBuilder.charAt(i) == '-') {
+                // If both dashes are at the same place then the program will print out 'True'
+                sBuilder.append("True");
+            } else {
+                // If not true, then it is automatically false
+                sBuilder.append("False");
+            }
+        }
+        // Return the answer back
+        return sBuilder.toString();
     }
 
     /**
@@ -33,13 +57,21 @@ public class A6Q10 {
         // Ask the user to input
         System.out.println("Please place your input!");
         // Save input of user to variable 'input'
-        int userInput = input.nextInt();
+        String userInput = input.nextLine();
         // Ask user to input second string
         System.out.println("Please place your second input!");
         // Save user's second input to variable 'string2'
-        int string2 = input.nextInt();
-        // Connect the whole method together with user's input
-        sameDashes(userInput, string2);
-
+        String userInput2 = input.nextLine();
+        // Compares both answer together for final result
+        String sameDashes1 = sameDashes1(userInput);
+        String sameDashes2 = sameDashes2(userInput2);
+        // Compare first string to second
+        if (sameDashes1.equals(sameDashes2)) {
+            // If both strings are the same, the program prints 'True'
+            System.out.println("True");
+        } else {
+            // If both strings are not the same, the program print 'False'
+            System.out.println("False");
+        }
     }
 }
