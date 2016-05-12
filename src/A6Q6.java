@@ -18,7 +18,7 @@ public class A6Q6 {
         int endnum = num % 10;
         // Divide the input by 10
         num = num / 10;
-        // Print the last digit
+        // Print the last digit to the user
         System.out.println("The last digit of your input is " + endnum + ".");
     }
 
@@ -27,7 +27,7 @@ public class A6Q6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        // User's input
-        lastDigit(3572);
+        // Connecting the mathod to input
+        lastDigit(-3572);
     }
 }

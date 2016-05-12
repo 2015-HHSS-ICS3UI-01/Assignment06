@@ -10,10 +10,9 @@ import java.util.Scanner;
  * @author tatad6701
  */
 public class A6Q3 {
-    // Create procedure loop that stores numbers from main method as 'number'
 
     public static void factors(int num) {
-        // Create for loop that goes through all numbers between 1 and number
+        // Create a for loop that goes through all numbers between 1 and the end of the input
         for (int factor = 1; factor <= num; factor++) {
             // Set variable 'remainder' to store the remainder of the number
             int remainder = num % factor;

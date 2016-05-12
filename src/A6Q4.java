@@ -8,13 +8,13 @@
  * @author tatad6701
  */
 public class A6Q4 {
+    // Double representing intial principal (p), double representing interest rate (r), and double representing number of year (n)
 
     public static void compoundInterest(double p, double r, int n) {
         // Equation of the compound equation
         double balance = (p * (Math.pow((1 + r), n)));
         // Output the balance to the user 
         System.out.println("Your balance is: " + balance);
-
     }
 
     /**
