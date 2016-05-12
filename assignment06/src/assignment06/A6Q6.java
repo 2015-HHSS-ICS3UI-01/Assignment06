@@ -10,8 +10,13 @@ package assignment06;
  */
 public class A6Q6 {
     public static void lastDigit(int num){
-        int lastDigit=num%10;
-        System.out.println(lastDigit);
+        if(num>0){
+            int lastDigit=num%10;
+            System.out.println(lastDigit);
+        }else if(num<0){
+            int lastDigit=num*-1%10;
+            System.out.println(lastDigit);
+        }
     }
 
     /**
@@ -19,6 +24,6 @@ public class A6Q6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        lastDigit(527);
+        lastDigit(-3527);
     }
 }
