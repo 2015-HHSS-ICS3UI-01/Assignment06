@@ -69,7 +69,7 @@ public class A6Q10 {
         } else {
             // If both strings are not the same, the program print 'False'
             System.out.println("False");
-
+// FINALLY FINISHED!
         }
     }
 }
