@@ -12,14 +12,14 @@ public class A6Q5 {
     public static void Chaotic(int numLines) {
         // Generate lines of random stars until required amount is met
         for (int linesTyped = 0; numLines > linesTyped; linesTyped = linesTyped + 1) {
-            // Generate a random amount of '*' between 1 and 5
-            int randNum = (int) (Math.random() * (5 - 1 + 1)) + 1;
-            // Use random number generated to create a line of stars 
+            // Generate number between 1 and 5 for asterisks to be outputted by the program 
+            int randNum = (int) (Math.random() * 5) + 1;
+            // Use random number generated to create a line of stars (the program will keep adding stars to the line until randNum is reached)
             for (int starsOut = 0; randNum > starsOut; starsOut = starsOut + 1) {
-                // Print each number as a '*' 
-                System.out.println("*");
+                // The program will output an asterisk(s) 
+                System.out.print("*");
             }
-            // Create space (enter key) to enter next line
+            // Create space (enter key) to enter next line for program to work 
             System.out.println("");
         }
     }
@@ -28,6 +28,7 @@ public class A6Q5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Chaotic(6);
+        // Number of rows to print (the user's input that connects back to the main method)
+        Chaotic(5);
     }
 }
