@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author tatad6701
  */
 public class A6Q9 {
-
+    // Method created to return whether all the digits of user's input is positive or negative
     public static void allDigitsOdd(int nums) {
         // Change a number to a string
         String number = Integer.toString(nums);
@@ -28,10 +28,10 @@ public class A6Q9 {
         }
         if (allOdd == true) {
             // Print out 'True' if all numbers are odd
-            System.out.println("True");
+            System.out.println("True.");
         } else {
             // Print out false if there is a even number
-            System.out.println("False");
+            System.out.println("False.");
         }
     }
 
@@ -39,6 +39,6 @@ public class A6Q9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        allDigitsOdd(9145293);
+        allDigitsOdd(135319);
     }
 }

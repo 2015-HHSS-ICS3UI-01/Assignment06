@@ -8,7 +8,7 @@
  * @author tatad6701
  */
 public class A6Q5 {
-
+    // Method used to create random number of artersicks on a set amount of lines (which the user inputs)
     public static void chaotic(int numLines) {
         // Generate lines of random stars until required amount is met
         for (int linesTyped = 0; numLines > linesTyped; linesTyped = linesTyped + 1) {

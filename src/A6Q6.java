@@ -8,7 +8,7 @@
  * @author tatad6701
  */
 public class A6Q6 {
-
+    // Method created that returns the last digit of the user's input
     public static void lastDigit(int num) {
         // Multiple the input by -1 if the input is negative
         if (num < 0) {

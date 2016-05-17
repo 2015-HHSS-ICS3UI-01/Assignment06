@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author tatad6701
  */
 public class A6Q3 {
-
+    // Method created to find the factors of a user's input
     public static void factors(int num) {
         // Create a for loop that goes through all numbers between 1 and the end of the input
         for (int factor = 1; factor <= num; factor++) {
@@ -28,6 +28,6 @@ public class A6Q3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        factors(30);
+        factors(10);
     }
 }

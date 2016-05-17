@@ -8,7 +8,7 @@
  * @author tatad6701
  */
 public class A6Q8 {
-
+    // Method created to output what season it is, depending on the user's input
     public static void season(int month, int day) {
         // If month is 1 or 2 then the season is Winter
         if (month == 1 || month == 2) {
@@ -50,7 +50,7 @@ public class A6Q8 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // User's input, month then day
+        // User's input, month then day, connects the rest of the mothod together
         season(12, 16);
     }
 }

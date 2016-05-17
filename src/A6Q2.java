@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author tatad6701
  */
 public class A6Q2 {
-
+    // Method that return's user's grade in a letter( A, B, C, D, or, F), using their input of their grade in a percentage
     public static void examGrade(int mark) {
         // If grade is less than 50%, then user has an F
         if (mark < 50) {

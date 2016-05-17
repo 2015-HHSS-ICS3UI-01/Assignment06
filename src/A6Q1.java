@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author tatad6701
  */
 public class A6Q1 {
-
+    // Method created to return area of circle with radius given as an input
     public static double circleArea(double radius) {
         // Calculating the area of the cirle using user's input of the radius
         double ans = ((radius * radius) * Math.PI);

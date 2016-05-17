@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author tatad6701
  */
 public class A6Q10 {
-
+    // Method created to determine whether two inputs have dashes at the same characters/location
     public static String sameDashes(String string1) {
         // New sBuilder
         StringBuilder sBuilder = new StringBuilder();
@@ -45,8 +45,9 @@ public class A6Q10 {
         // Compare both inputs together for final result, using strings
         String sameDashes1 = sameDashes(userInput);
         String sameDashes2 = sameDashes(userInput2);
+        // Create sring for leftover character of the longer input
         String leftover;
-        // Program "disregard" the longer word, acknowlegding when one input is shorter than the other
+        // Program "disregards" the longer word, acknowlegding when one input is shorter than the other
         if (sameDashes1.length() > sameDashes2.length()) {
             // The leftover of the first input, if longer than the second input, will be 'chopped off', in other words, disregarded
             leftover = sameDashes1.substring(sameDashes2.length());
@@ -57,7 +58,7 @@ public class A6Q10 {
             sameDashes2 = sameDashes2.substring(0, sameDashes1.length());
         }
 
-        // Compare first string to second
+        // Compare first string to second string
         if (sameDashes1.equals(sameDashes2)) {
             // If the leftover length is above 0 and if it contains 'True', then output 'False'
             if (leftover.length() > 0 && leftover.contains("True.")) {
