@@ -18,7 +18,7 @@ public class A6Q3 {
             int remainder = num % factor;
             // If the remainder is 0, then print out the factor
             if (remainder == 0) {
-                // Ouput the factors
+                // Ouput the factors to the user
                 System.out.println(factor);
             }
         }

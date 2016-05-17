@@ -10,15 +10,13 @@
 public class A6Q7 {
 
     public static void firstDigit(int number) {
-        // Convert integer to string
-        String num = Integer.toString(number);
         // Multiple the input by -1 if the input is negative
         if (number < 0) {
             number = number * -1;
         }
-        // Convert  integer to string
+        // Convert integer to string
         String numString = Integer.toString(number);
-        // Store first char
+        // Store first char (and use to display the answer to the user)
         String firstnum = (numString.substring(0, 1));
         // Output the first digit to the user
         System.out.println("The first digit of your input is " + firstnum + ".");
@@ -28,8 +26,7 @@ public class A6Q7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         // User's input
-        firstDigit(-43572);
+        firstDigit(-947);
     }
 }

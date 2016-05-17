@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class A6Q9 {
 
     public static void allDigitsOdd(int nums) {
-        // Change a number to string
+        // Change a number to a string
         String number = Integer.toString(nums);
         // Create boolean
         boolean allOdd = true;
@@ -27,7 +27,7 @@ public class A6Q9 {
             }
         }
         if (allOdd == true) {
-            // Print out true if all numbers are odd
+            // Print out 'True' if all numbers are odd
             System.out.println("True");
         } else {
             // Print out false if there is a even number
@@ -39,6 +39,6 @@ public class A6Q9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        allDigitsOdd(135319);
+        allDigitsOdd(9145293);
     }
 }
