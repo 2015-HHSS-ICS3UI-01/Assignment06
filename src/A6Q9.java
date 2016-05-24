@@ -28,7 +28,7 @@ public class A6Q9 {
     }
 
     public static void main(String[] args) {
-
+        
         Scanner input = new Scanner(System.in);                                 //Create Scanner
         System.out.println("Input a number to to check for even digits");       //Asks to input number
         int n = input.nextInt();                                                //recieves number
